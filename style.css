@@ -108,6 +108,13 @@ nav a:hover {
 
 /* Seções */
 
+#info-squirtle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 #info-squirtle img {
   width: 150px;
   height: 150px;
@@ -115,8 +122,18 @@ nav a:hover {
   margin-right: 12px;
 }
 
-#curiosidades li::marker {
-  content: '🔍';
+#info-squirtle img:nth-child(2) {
+  margin-right: 0;
+}
+
+#info-squirtle img {
+  flex-basis: calc(50% - 6px);
+}
+
+#curiosidades ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 #evolucao ul {
@@ -156,11 +173,19 @@ a[target='_blank']:hover {
 /* Footer */
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   background-color: #343a40;
   color: #fff;
   padding: 20px;
   text-align: center;
   bottom: 0;
+}
+
+footer p {
+  margin-bottom: 0;
 }
 
 footer a {
